@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pat's Cookie Shop</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Pat's Cookie Shop</h1>
+        <ul>
+          <li><a href="updated-index.html">Home</a></li>
+          <li class="highlight">Sales</li>
+        </ul>
+      </div>
+    </header>
+    <img src="assets/salmon.png" class="logoLeft">
+    <main>
+      <form>
+
+        <h2>ADD NEW STORE</h2>
+
+        <fieldset>
+          <label for="store"><span class="form">Store Name:</span></label>
+          <input type="text" name="store" placeholder="Enter Store Name..." value="" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="minCustPerHour"><span class="form">Min Customers per Hour:</span></label>
+          <input type="number" name="minCustPerHour" value="" placeholder="Min cust/hr" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="maxCustPerHour"><span class="form">Max Customers per Hour:</span></label>
+          <input type="number" name="maxCustPerHour" value="" placeholder="Max cust/hr" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="avgCookiesPerCust"><span class="form">Avg Cookies per Customer:</span></label>
+          <input type="number" name="avgCookiesPerCust" value="" placeholder="Avg cookies/cust" required>
+        </fieldset>
+
+        <button id="submit_btn" type="submit">Add store</button>
+      </form>
+      <section>
+        <h2>Daily Sales Estimates</h2>
+        <table id="store-sales" class="table"></table>
+      </section>
+
+      <script rel="javascript text" src="updated-sales.js"></script>
+      <img src="assets/chinook.jpg" class="logoRight">
+    </main>
+    <footer>
+      <article>
+        <h2>Contact Us:</h2>
+        <p>Phone: (253) 123-4567</p>
+        <p>email: patscookies@madeup.com</p>
+      </article>
+      <span>
+    </footer>
+  </body>
+</html>
